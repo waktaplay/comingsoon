@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+
+  <link rel="preconnect" href="https://static.toss.im" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdn.discordapp.com" crossorigin>
+
+  <title>서비스 오픈 준비 중이에요 👩‍💻</title>
+
+  <style>
+    @import url("https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css");
+    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/variable/pretendardvariable-dynamic-subset.css");
+    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/variable/pretendardvariable-std-dynamic-subset.css");
+    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/variable/pretendardvariable-jp-dynamic-subset.css");
+
+    @font-face {
+      font-family: "GoyangDeogyang";
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GoyangDeogyang.woff') format('woff');
+      font-weight: normal;
+    }
+
+    @font-face {
+      font-family: "TossFaceFontWeb";
+      src: url("https://static.toss.im/tossface-font/TossFaceFontWeb.otf") format("truetype");
+      font-weight: 500;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+
+      height: calc(var(--vh, 1vh) * 100);
+      width: 100vw;
+    }
+
+    html[lang='ko'],
+    html[lang='en'] {
+      font-family: "SUIT Variable", "Pretendard Variable", sans-serif;
+    }
+
+    html[lang='ja'] {
+      font-family: "Pretendard JP Variable", "Pretendard Variable", sans-serif;
+    }
+
+    html[lang='vi'] {
+      font-family: "Pretendard Std Variable", sans-serif;
+    }
+
+    body {
+      background: rgba(0, 0, 0, 0.5) url("https://cdn.discordapp.com/attachments/1089230153323909210/1089462683264364615/waktaplay_background.png");
+
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+    }
+
+    main {
+      height: 100%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    section h1 {
+      color: white;
+      text-align: center;
+      font-weight: bolder;
+
+      font-size: 2rem;
+      margin-bottom: 35px;
+    }
+
+    section emoji {
+      font-family: "TossFaceFontWeb";
+    }
+
+    section img {
+      width: 30px;
+    }
+
+    section p,
+    footer p {
+      color: #d5d5d5;
+      font-weight: 300;
+      text-align: center;
+      word-break: keep-all;
+    }
+
+    footer {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      margin-top: 45px;
+    }
+
+    footer img {
+      height: 20px;
+    }
+
+    footer div {
+      display: flex;
+      align-items: center;
+    }
+
+    footer div span {
+      color: white;
+      font-weight: bolder;
+      text-align: center;
+      word-break: keep-all;
+
+      font-family: "GoyangDeogyang";
+    }
+
+    @media (min-width: 630px) {
+      .pc {
+        display: block;
+      }
+
+      .mobile {
+        display: none;
+      }
+    }
+
+    @media (max-width: 629px) {
+      section h1 {
+        font-size: 1.25rem;
+      }
+
+      html[lang='ko'] section p,
+      html[lang='en'] section p {
+        font-size: 0.8em;
+      }
+
+      html[lang='ja'] section p {
+        font-size: 0.65em;
+      }
+
+      html[lang='vi'] section p {
+        font-size: 0.75em;
+      }
+
+      .pc {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section>
+      <h1 id="title">
+        서비스 오픈 준비 중이에요 <emoji>👩‍💻</emoji>
+      </h1>
+      <p>
+        <span id="desc1">
+          벌써 오시다니..!! 왁타플레이에 관심가져 주셔서 감사합니다!!
+        </span>
+        <br /><br />
+        <span id="desc2p" class="pc">
+          저희가 오픈을 열심히 준비하고 있으니, 조금만 더 기다려 주세요!
+          <img src="https://cdn.discordapp.com/emojis/1079374677396435014.png?size=512" alt="킹아" />
+        </span>
+        <span id="desc2m" class="mobile">
+          저희가 오픈을 열심히 준비하고 있으니, 조금만 더 기다려 주세요!
+          <img src="https://cdn.discordapp.com/emojis/1079374677396435014.png?size=512" alt="킹아" />
+        </span>
+      </p>
+    </section>
+
+    <footer>
+      <img src="https://cdn.discordapp.com/attachments/1089230153323909210/1089249753197457428/waktaplay_logo_new.svg"
+        alt="WAKTAPLAY Logo" />
+
+      <div>
+        <span id="brand">왁타플레이 WAKTAPLAY</span>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/i18next@23.2.3/dist/umd/i18next.min.js"></script>
+
+  <script>
+    (async () => {
+      const ko = await fetch("/lang/ko.json")
+      const en = await fetch("/lang/en.json")
+      const ja = await fetch("/lang/ja.json")
+      const vi = await fetch("/lang/vi.json")
+
+      document.documentElement.lang = navigator.language
+
+      await i18next.init({
+        lng: navigator.language.split("-")[0],
+        fallbackLng: 'en',
+        debug: true,
+        resources: {
+          ko: {translation: await ko.json()},
+          en: {translation: await en.json()},
+          ja: {translation: await ja.json()},
+          vi: {translation: await vi.json()},
+        }
+      })
+
+      document.title = i18next.t("title").replace("<emoji>", "").replace("</emoji>", "")
+
+      document.querySelector("#title").innerHTML = i18next.t("title")
+      document.querySelector("#desc1").innerHTML = i18next.t("desc1")
+
+      document.querySelector("#desc2p").innerHTML = i18next.t("desc2p")
+      document.querySelector("#desc2m").innerHTML = i18next.t("desc2m")
+
+      document.querySelector("#brand").innerHTML = i18next.t("brand")
+    })()
+
+    function calcActualHeight() {
+      if (["iPad", "iPhone", "iPod"].includes(navigator.platform) || (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
+        let vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty("--vh", vh + "px")
+
+        return true
+      } else {
+        document.documentElement.style.setProperty("--vh", "1vh")
+
+        return false
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", calcActualHeight)
+
+    window.addEventListener("load", calcActualHeight)
+    window.addEventListener("resize", calcActualHeight)
+  </script>
+</body>
+
+</html>
