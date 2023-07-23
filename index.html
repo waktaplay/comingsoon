@@ -195,6 +195,11 @@
   <script src="https://cdn.jsdelivr.net/npm/i18next@23.2.3/dist/umd/i18next.min.js"></script>
 
   <script>
+    const query = new URLSearchParams(location.search)
+    if (query.get('old') != 'y') {
+      location.replace('https://waktaplay.com/?t=' + new Date().getTime())
+    }
+
     (async () => {
       const ko = await fetch("/lang/ko.json")
       const en = await fetch("/lang/en.json")
