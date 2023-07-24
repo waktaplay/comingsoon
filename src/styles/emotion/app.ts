@@ -1,44 +1,4 @@
-import { useEffect } from "react";
-
 import { css } from "@emotion/react";
-import { Trans, useTranslation } from "react-i18next";
-
-import "./utils/i18n";
-
-import logo from "./assets/logo.svg";
-
-export default function App() {
-  const { t, i18n } = useTranslation();
-
-  useEffect(() => {
-    i18n.changeLanguage(navigator.language.split("-")[0]);
-
-    document.documentElement.lang = navigator.language.split("-")[0];
-    document.title = i18n.t("title").replace("<1>", "").replace("</1>", "");
-  }, [i18n]);
-
-  return (
-    <div css={appCSS}>
-      <header css={headerCSS}>
-        <img src={logo} css={headerImgCSS} />
-        <p css={logoTitleCSS}>WAKTAPLAY</p>
-      </header>
-      <main css={mainCSS}>
-        <h1 css={titleCSS}>
-          <Trans i18nKey="title">
-            서비스 <span css={titleHighlightCSS}>오픈 준비 중</span>이에요
-          </Trans>
-        </h1>
-        <p css={contentCSS}>{t("desc1")}</p>
-        <p css={contentCSS}>{t("desc2")}</p>
-        <footer css={footerCSS}>
-          <img src={logo} css={footerIconCSS} />
-          <p css={footerTitleCSS}>{t("brand")}</p>
-        </footer>
-      </main>
-    </div>
-  );
-}
 
 const appCSS = css({
   height: "100vh",
@@ -136,3 +96,17 @@ const footerTitleCSS = css({
     fontSize: "15px",
   },
 });
+
+export {
+  appCSS,
+  headerCSS,
+  headerImgCSS,
+  logoTitleCSS,
+  mainCSS,
+  titleCSS,
+  titleHighlightCSS,
+  contentCSS,
+  footerCSS,
+  footerIconCSS,
+  footerTitleCSS,
+};

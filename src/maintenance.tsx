@@ -18,7 +18,7 @@ import {
 
 import logo from "./assets/logo.svg";
 
-import "./utils/i18n/index";
+import "./utils/i18n/maintenance";
 import "./styles/common.css";
 
 export default function App() {
@@ -40,7 +40,7 @@ export default function App() {
       <main css={mainCSS}>
         <h1 css={titleCSS}>
           <Trans i18nKey="title">
-            서비스 <span css={titleHighlightCSS}>오픈 준비 중</span>이에요
+            서비스 <span css={titleHighlightCSS}>점검 중</span>이에요!
           </Trans>
         </h1>
         <p css={contentCSS}>{t("desc1")}</p>
