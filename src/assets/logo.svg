@@ -1,28 +1,16 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="1000" height="1000">
-	<title>waktaplay_logo_new</title>
-	<defs>
-		<linearGradient id="g1" x1="510.2" y1="292.9" x2="207.4" y2="546.9" gradientUnits="userSpaceOnUse">
-			<stop offset="0" stop-color="#b7fb9c"/>
-			<stop offset="0" stop-color="#b7fb9c"/>
-			<stop offset="1" stop-color="#93f9ab"/>
-		</linearGradient>
-		<linearGradient id="g2" x1="358.6" y1="78.6" x2="358.6" y2="332.2" gradientUnits="userSpaceOnUse">
-			<stop offset="0" stop-color="#cbfe96"/>
-			<stop offset="0" stop-color="#cbfe96"/>
-			<stop offset="1" stop-color="#b7fb9c"/>
-		</linearGradient>
-		<linearGradient id="g3" x1="448.3" y1="78.6" x2="448.3" y2="338.3" gradientUnits="userSpaceOnUse">
-			<stop offset="0" stop-color="#e6fe86"/>
-			<stop offset="1" stop-color="#cbfe96"/>
-			<stop offset="1" stop-color="#cbfe96"/>
-		</linearGradient>
-	</defs>
-	<style>
-		.s0 { fill: url(#g1) } 
-		.s1 { fill: url(#g2) } 
-		.s2 { fill: url(#g3) } 
-	</style>
-	<path id="Bottom" class="s0" d="m317 166.5c29 16.7 29 58.5 0 75.2l-157 90.7c-29 16.7-65.2-4.2-65.2-37.6v69.9c0 42.6 46.1 69.2 82.9 47.9l199.9-115.4c36.8-21.3 36.8-74.5 0-95.8z"/>
-	<path id="Right" class="s1" d="m94.8 203.9c0-33.5 36.2-54.4 65.2-37.7l157 90.7c29 16.7 29 58.6 0 75.3l60.6-35c36.8-21.3 36.8-74.5 0-95.7l-199.9-115.4c-36.8-21.3-82.9 5.3-82.9 47.9z"/>
-	<path id="Left" class="s2" d="m160 332.4l13.1-7.6v-166.1c0-33.5 36.2-54.4 65.2-37.7l-60.6-34.9c-36.8-21.3-82.9 5.3-82.9 47.9v160.8c0 33.4 36.2 54.3 65.2 37.6z"/>
+<svg width="399" height="284" viewBox="0 0 399 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M337.801 144.339C337.801 221.106 275.568 283.339 198.801 283.339C122.033 283.339 59.8005 221.106 59.8005 144.339C59.8005 67.5713 122.033 5.33887 198.801 5.33887C275.568 5.33887 337.801 67.5713 337.801 144.339Z" fill="url(#paint0_linear_12_78)"/>
+<path d="M361.705 197.205C359.125 204.184 353.11 210.413 342.756 215.25C332.347 220.113 318.209 223.22 300.994 224.085C266.605 225.812 221.94 218.494 175.414 201.297C128.889 184.1 90.2017 160.61 65.2028 136.931C52.6891 125.078 43.9701 113.522 39.2264 103.059C34.5074 92.6503 33.99 84.0062 36.5695 77.0275C39.149 70.0488 45.1641 63.8193 55.5183 58.982C65.9266 54.1195 80.0652 51.0127 97.2797 50.1478C131.67 48.42 176.334 55.7386 222.86 72.9355C269.385 90.1323 308.072 113.623 333.071 137.302C345.585 149.155 354.304 160.71 359.048 171.174C363.767 181.582 364.284 190.226 361.705 197.205Z" stroke="url(#paint1_linear_12_78)" stroke-width="20"/>
+<defs>
+<linearGradient id="paint0_linear_12_78" x1="338" y1="5.00001" x2="60" y2="283" gradientUnits="userSpaceOnUse">
+<stop stop-color="#47F998"/>
+<stop offset="1" stop-color="#60E2D2"/>
+</linearGradient>
+<linearGradient id="paint1_linear_12_78" x1="251" y1="5.72769e-06" x2="167" y2="217" gradientUnits="userSpaceOnUse">
+<stop offset="0.473201" stop-color="#8FD3F4" stop-opacity="0"/>
+<stop offset="0.626064" stop-color="#41F3D4" stop-opacity="0.55"/>
+<stop offset="0.778634" stop-color="#77F2AC" stop-opacity="0.7"/>
+<stop offset="0.964144" stop-color="#D9FF88" stop-opacity="0.85"/>
+</linearGradient>
+</defs>
 </svg>

@@ -10,7 +10,9 @@ const appCSS = css({
 });
 
 const headerCSS = css({
+  gap: "12px",
   display: "flex",
+  alignItems: "center",
   width: "200px",
   position: "fixed",
   padding: "30px 40px",
@@ -20,19 +22,16 @@ const headerCSS = css({
 });
 
 const headerImgCSS = css({
-  height: "45px",
+  height: "38px",
   "@media (max-width: 580px)": {
-    height: "38px",
+    height: "30px",
   },
 });
 
 const logoTitleCSS = css({
-  fontFamily: "GoyangDeogyang",
-  marginLeft: "6px",
-  marginTop: "13px",
-  fontSize: "18px",
-  "@media (max-width: 768px)": {
-    display: "none",
+  height: "16px",
+  "@media (max-width: 580px)": {
+    height: "10px",
   },
 });
 
@@ -58,7 +57,9 @@ const titleCSS = css({
 });
 
 const titleHighlightCSS = css({
-  color: "#b7fb9c",
+  background: "linear-gradient(90deg, #47f998 0%, #60e2d2 100%)",
+  backgroundClip: "text",
+  WebkitTextFillColor: "transparent"
 });
 
 const contentCSS = css({
@@ -74,26 +75,23 @@ const contentCSS = css({
 });
 
 const footerCSS = css({
+  gap: "8px",
   display: "flex",
   marginTop: "40px",
   alignItems: "center",
 });
 
 const footerIconCSS = css({
-  height: "32px",
+  height: "30px",
   "@media (max-width: 580px)": {
-    fontSize: "29px",
+    height: "25px",
   },
 });
 
 const footerTitleCSS = css({
-  fontFamily: "GoyangDeogyang",
-  marginLeft: "6px",
-  marginTop: "19px",
-  fontSize: "18px",
+  height: "12px",
   "@media (max-width: 580px)": {
-    marginTop: "17px",
-    fontSize: "15px",
+    height: "10px",
   },
 });
 

@@ -1,0 +1,13 @@
+{
+  "comingsoon" : {
+    "title": "We are <1>preparing</1> to open the service!",
+    "desc1": "You're already here..!! Thanks for your interest in SpaceWak!",
+    "desc2": "We're working hard to open, so please wait a little longer!"
+  },
+  "maintenance": {
+    "title": "Service is under <1>maintainance</1>!",
+    "desc1": "Date : ",
+    "desc2": "Description : ",
+    "desc3": "We will do our best to resume service as soon as possible."
+  }  
+}
