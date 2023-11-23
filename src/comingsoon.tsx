@@ -1,6 +1,7 @@
 import { useEffect } from "react";
-
 import { Trans, useTranslation } from "react-i18next";
+import { useSearchParams } from "react-router-dom";
+
 import {
   appCSS,
   headerCSS,
@@ -20,11 +21,12 @@ import text from "./assets/text.svg";
 
 export default function ComingSoon() {
   const { t, i18n } = useTranslation();
+  const [searchParams] = useSearchParams();
 
   useEffect(() => {
-    i18n.changeLanguage(navigator.language.split("-")[0]);
+    i18n.changeLanguage(searchParams.get('lang') || navigator.language.split("-")[0]);
 
-    document.documentElement.lang = navigator.language.split("-")[0];
+    document.documentElement.lang = searchParams.get('lang') || navigator.language.split("-")[0];
     document.title = i18n.t("comingsoon.title").replace("<1>", "").replace("</1>", "");
   }, [i18n]);
 
