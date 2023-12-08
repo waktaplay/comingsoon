@@ -1,7 +1,7 @@
 {
   "comingsoon" : {
     "title": "Chúng tôi <1>đang chuẩn bị</1> mở dịch vụ!",
-    "desc1": "Bạn đã ở đây rồi..!! Cảm ơn bạn đã quan tâm đến SpaceWak!",
+    "desc1": "Bạn đã ở đây rồi..!! Cảm ơn bạn đã quan tâm đến {}!",
     "desc2": "Chúng tôi đang chuẩn bị chăm chỉ cho buổi khai trương, vì vậy hãy đợi thêm một chút nữa!"
   },
   "maintenance": {
@@ -9,5 +9,9 @@
     "desc1": "Ngày : ",
     "desc2": "Mô tả: ",
     "desc3": "Chúng tôi sẽ cố gắng hết sức để nối lại dịch vụ ngay khi có thể."
+  },
+  "brand": {
+    "waktaplay": "WaktaPlay",
+    "spacewak": "SpaceWak"
   }
 }

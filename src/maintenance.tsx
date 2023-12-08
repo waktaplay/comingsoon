@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { useSearchParams } from "react-router-dom";
 
+import { css } from "@emotion/react";
+
 import {
   appCSS,
   headerCSS,
@@ -19,9 +21,14 @@ import {
 import logo from "./assets/logo.svg";
 import text from "./assets/text.svg";
 
+import waktaplayLogo from "./assets/waktaplay-logo.svg";
+import waktaplayText from "./assets/waktaplay-text.svg";
+
 export default function Maintenance() {
   const { t, i18n } = useTranslation();
   const [searchParams] = useSearchParams();
+
+  const isWaktaplay = window.location.hostname.includes('waktaplay.com') || window.location.hostname.includes('billboardoo.com');
 
   useEffect(() => {
     i18n.changeLanguage(searchParams.get('lang') || navigator.language.split("-")[0]);
@@ -32,9 +39,9 @@ export default function Maintenance() {
 
   return (
     <div css={appCSS}>
-      <header css={headerCSS}>
-        <img src={logo} css={headerImgCSS} />
-        <img src={text} css={logoTitleCSS} />
+      <header css={[headerCSS, css({ gap: isWaktaplay ? '18px' : '12px' })]}>
+        <img src={isWaktaplay ? waktaplayLogo : logo} css={headerImgCSS} />
+        <img src={isWaktaplay ? waktaplayText : text} css={logoTitleCSS} />
       </header>
       <main css={mainCSS}>
         <h1 css={titleCSS}>
@@ -44,9 +51,9 @@ export default function Maintenance() {
         </h1>
         <p css={contentCSS}>{t("maintenance.desc1")}</p>
         <p css={contentCSS}>{t("maintenance.desc2")}</p>
-        <footer css={footerCSS}>
-          <img src={logo} css={footerIconCSS} />
-          <img src={text} css={footerTitleCSS} />
+        <footer css={[footerCSS, css({ gap: isWaktaplay ? '14px' : '8px' })]}>
+          <img src={isWaktaplay ? waktaplayLogo : logo} css={footerIconCSS} />
+          <img src={isWaktaplay ? waktaplayText : text} css={footerTitleCSS} />
         </footer>
       </main>
     </div>

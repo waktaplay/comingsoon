@@ -10,7 +10,6 @@ const appCSS = css({
 });
 
 const headerCSS = css({
-  gap: "12px",
   display: "flex",
   alignItems: "center",
   width: "200px",
@@ -75,7 +74,6 @@ const contentCSS = css({
 });
 
 const footerCSS = css({
-  gap: "8px",
   display: "flex",
   marginTop: "40px",
   alignItems: "center",
